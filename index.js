@@ -5,9 +5,10 @@ const navSlide = () => {
   const navLinks = document.querySelectorAll(".nav-links li")
 
   burger.addEventListener('click', () => {
+    // fixed the body
+    document.querySelector("body").classList.toggle('body-fixed')
     // toggle Nav
     nav.classList.toggle('nav-active');
-
     //Animate Links
 
     navLinks.forEach((link, index) => {
@@ -20,7 +21,16 @@ const navSlide = () => {
     //burger animation
     burger.classList.toggle('toggle');
 
+    //if window is reszied
+    window.addEventListener('resize', function(event) {
+      document.querySelector("body").classList.toggle('body-fixed')
+      nav.classList.toggle('nav-active');
+    })
+
   });
+
+
+
 
 }
 navSlide();

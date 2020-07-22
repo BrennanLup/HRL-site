@@ -83,7 +83,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1050px) {
+@media (max-width: 1050px) {
   body {
     overflow-x: hidden; /*remoes horizontal overlfow from transform below*/
   }
@@ -91,21 +91,20 @@ nav {
   .nav-links { /* Creating the mobile view */
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    top: 2vh;
+    margin-top: 15%;
     background-color: #ffcd60;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    transform: translate(0, -120%); /*makes it not appear all the time by moving to the top*/
+    transform: translate(0, -150%); /*makes it not appear all the time by moving to the top*/
     z-index: 10;
-    height: 55%;
+    height: 100%;
+    padding-bottom: 10%;
+      margin-top: 50px;
   }
 
-  .nav-links li {
-    opacity: 0;
-  }
 
   .nav-links a {
     color: #2e2e2e;
@@ -122,10 +121,22 @@ nav {
 
 }
 
+/* if nav bar is open and window is resized bigger */
+@media (min-width: 1050px) {
+
+}
+
 .nav-active {
   transform: translate(0%);
   transition: transform 0.5s ease-in;
+  overflow: hidden;
+  position: fixed;
 }
+
+.body-fixed {
+  position: fixed;
+}
+
 
 @keyframes navLinkFade {
   from {
@@ -179,7 +190,7 @@ nav {
 }
 
 /* header for mobile */
-@media screen and (max-width:940px) {
+@media (max-width: 940px) {
   .header-content {
     margin: auto;
   }
@@ -231,7 +242,7 @@ align-items: center;
 }
 
 /* core themes for mobile */
-@media screen and (max-width: 940px) {
+@media (max-width: 940px) {
   .themes-row {
     display: block;
   }
