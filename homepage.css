@@ -1,0 +1,296 @@
+*{ /* removes any existing structure */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* universal */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+
+/* title */
+.title {
+  background-image: url(images/header-background.png);
+  background-size: cover;
+  background-position: center center;
+}
+/* Navigation Bar */
+
+nav {
+  display: flex; /* puts the h4 and li on same lines */
+  justify-content: space-around; /* evenly spaces them */
+  align-items: center;
+  min-height: 8vh;
+  z-index: 15;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  color: #ffcd60;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.HRL-navbar {
+  color: #ffcd60;
+}
+
+.HRL-navbar:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.nav-links li {
+  list-style: none; /*remove bullet points from list*/
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  color: #ffcd60;
+}
+
+/* nav bar for mobile */
+/* we dont need it activated when its not mobile */
+.burger {
+  display: none;
+}
+
+.burger div { /*creates three lines for mobile icon pop-up window*/
+  width: 25px;
+  height: 3px;
+  background-color: #ffcd60;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1050px) {
+  body {
+    overflow-x: hidden; /*remoes horizontal overlfow from transform below*/
+  }
+
+  .nav-links { /* Creating the mobile view */
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ffcd60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translate(0, -120%); /*makes it not appear all the time by moving to the top*/
+    z-index: 10;
+    height: 55%;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links a {
+    color: #2e2e2e;
+  }
+
+  .nav-links a:hover {
+    color: #fff;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+}
+
+.nav-active {
+  transform: translate(0%);
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/* <!-- Header section */
+.header {
+  position: relative;
+  padding-bottom: 30%;
+  min-height: 500px;
+
+}
+
+.header-content {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  right: 40px;
+  max-width: 700px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.header-text {
+  font-size: 2.5rem;
+  color: #d3d3d3;
+  font-family: "Ubuntu";
+}
+
+.header-img {
+  width: 22rem;
+  height: 10rem;
+}
+
+/* header for mobile */
+@media screen and (max-width:940px) {
+  .header-content {
+    margin: auto;
+  }
+
+  .header-img {
+    display: block;
+    margin: auto;
+  }
+
+  .header-words {
+    text-align: center;
+  }
+}
+
+/* Core-themes-section */
+.core-themes {
+  background-color: #2e2e2e;
+}
+
+.themes-row {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.theme {
+  text-align: center;
+  width: 200px;
+}
+
+.theme-titles {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.themes-text {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-top: 10px;
+  font-family: "Montserrat";
+  line-height: 25px;
+  color: #d3d3d3;
+}
+
+.themes-icon {
+  padding-bottom: 15px;
+  color: #ffcd60;
+}
+
+/* core themes for mobile */
+@media screen and (max-width: 940px) {
+  .themes-row {
+    display: block;
+  }
+
+  .theme {
+    margin: auto auto;
+  }
+
+}
+
+/* Tips-section */
+.tips {
+  background-color: #ffcd60;
+  text-align: center;
+}
+
+.tips-text {
+  line-height: 1.5;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.tips-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* tips for mobile */
+.tips-text {
+  font-size: 2rem;
+}
+
+/* Socials */
+.socials {
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+}
+
+/* socials mobile */
