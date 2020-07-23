@@ -19,35 +19,39 @@
 </head>
   <body>
     <!-- Navigation Bar -->
-    <nav>
-      <div class="logo">
-      <a class="HRL-navbar" href="index.html">Human Resources Laurier</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/hexagons.png" alt="HRL icon" width="30" height="30">
+        Human Resources Laurier
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="why-hrl.html">Why HRL?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hrl@laurier.html">HRL @ Laurier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coming-up.html">Coming Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="day-in-the-life.html">Day in the Life</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="corporate.html">Corporate</a>
+          </li>
+
+        </ul>
       </div>
-
-      <ul class="nav-links">
-        <li> <a href="why-hrl.html">Why HRL?</a> </li>
-        <li> <a href="hrl@laurier.html">HRL @ Laurier</a> </li>
-        <li> <a href="events.html">Events</a> </li>
-        <li> <a href="coming-up.html">Coming Up</a> </li>
-        <li> <a href="day-in-the-life.html">Day in the Life</a> </li>
-        <li> <a href="corporate.html">Corporate</a> </li>
-      </ul>
-
-  <!-- Nav bar for Mobile/three bars -->
-      <div class="burger">
-        <div class="line1">
-        </div>
-        <div class="line2">
-
-        </div>
-
-        <div class="line3">
-
-        </div>
-      </div>
-
     </nav>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
