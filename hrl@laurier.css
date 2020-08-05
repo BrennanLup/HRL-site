@@ -1,0 +1,118 @@
+*{ /* removes any existing structure */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 0;
+  line-height: 1.33;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 3.5rem;
+  top: 1rem;
+  border-radius: 1px;
+  background-color: #ffcd60;
+  position: relative;
+}
+
+/* title section*/
+.title-section {
+  height: 500px;
+  background-image: url(images/bckg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.title-content {
+  position: absolute;
+  height: 500px;
+  padding-left: 75px;
+}
+
+.title-text {
+    font-family: "Ubuntu";
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+    width: 300px;
+    height: auto;
+    padding-top: 50%;
+}
+
+@media (max-width:768px) {
+  .title-text {
+    font-size: 3.5rem;
+    line-height: 80px;
+      padding-top: 55%;
+  }
+  .title-content {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  .title-text {
+    font-size: 3rem;
+  }
+  .title-content {
+    padding-left: 0;
+  }
+}
+
+/* HRPA Links */
+.HRL-laurier-section {
+  display: block;
+  width: 100%;
+}
+
+.HRL-laurier-section, textarea {
+  max-width: 50rem;
+  margin: auto;
+  padding: 4.2rem;
+}
+
+.HRL-laurier-title {
+  font-size: 52px;
+}
+
+/* Socials */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.socials {
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+}

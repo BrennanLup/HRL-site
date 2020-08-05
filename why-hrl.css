@@ -1,0 +1,314 @@
+*{ /* removes any existing structure */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+div {
+  display: block;
+}
+
+h2 {
+  margin-top: 0;
+  line-height: 1.33;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+p {
+  font-weight: 300;
+  margin-top: 0;
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+
+
+/* Title section */
+.title-bgimg {
+  height: 500px;
+  background-image: url(images/notebook.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.why-hrl-container {
+  position: relative;
+  z-index: 100;
+  margin-top: -230px;
+  margin-bottom: 0px;
+  padding: 20px 60px;
+  background-color: #fff;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-text {
+    font-family: "Ubuntu";
+    text-align: center;
+}
+
+.why-hrl-text {
+  margin-bottom: 50px;
+  font-family: "Montserrat";
+  color: #2a2a2a;
+  font-size: 1rem;
+  line-height: 40px;
+  letter-spacing: 0.5;
+}
+
+/* HRL Network */
+.hrl-network {
+  height: 400px;
+  background-color: #fff;
+}
+
+/* meet the team */
+.our-team {
+  display: block;
+  width: 100%;
+}
+
+.our-team, textarea {
+  max-width: 50rem;
+  margin: auto;
+  padding: 4.2rem;
+}
+
+.intro-title {
+  font-size: 52px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 3.5rem;
+  top: 1rem;
+  border-radius: 1px;
+  background-color: #ffcd60;
+  position: relative;
+}
+
+.content-list {
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.structure-row {
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+}
+
+
+.team-member {
+  justify-content: center;
+  width: 100%;
+  padding: 2.369rem;
+}
+
+.row-column {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 2.369rem;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+
+.team-member .row-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: center;
+    max-width: 37.5rem;
+  }
+
+.team-member .row-content img {
+  border: 1px solid #707070;
+  border-radius: 3px;
+  display: block;
+  max-width: 20rem;
+  margin: 0 auto 3.157rem;
+  width: 80%;
+}
+
+.img-loaded {
+  opacity: 1;
+}
+
+.img-lazy {
+  transition: all .5s;
+}
+
+.team-title {
+  margin: auto 0 0;
+  line-height: 1.777rem;
+}
+
+.program {
+  margin: .625rem 0 1.25rem;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 1.777rem;
+}
+
+.content-list .row-content {
+  width: 100%;
+  flex-direction: column;
+}
+
+.program {
+  margin-top: 1rem;
+}
+
+.structure-row {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 0;
+  min-height: 75vh;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+@media (min-width: 500px) {
+  .content-list .row-content {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .content-list.structure-row {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .team-member .row-content {
+    max-width: 48rem;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+.team-member.row-column {
+  align-items: baseline;
+  border-right: 1px solid #d9d9d9;
+  width: 50%;
+  padding: 3.157rem;
+}
+}
+
+@media (min-width: 1080px) {
+
+.team-member.row-column {
+  width: 33.33%;
+  padding: 4.209rem;
+}
+
+.team-member .row-content img {
+  padding-bottom: 0;
+  width: 85%;
+}
+
+}
+
+@media (min-width: 1400px) {
+  .content-list.structure-row {
+    max-width: 1400px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+  }
+}
+
+
+/* FAQ */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.questions {
+  padding-top: 15px;
+}
+
+
+/* Socials */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.socials {
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+}

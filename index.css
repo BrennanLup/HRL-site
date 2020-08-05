@@ -1,0 +1,194 @@
+*{ /* removes any existing structure */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* universal */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+
+/* title */
+.title {
+  background-image: url(images/header-background.png);
+  background-size: cover;
+  background-position: center center;
+}
+/* Navigation Bar */
+
+
+/* <!-- Header section */
+.header {
+  position: relative;
+  padding-bottom: 30%;
+  min-height: 500px;
+}
+
+.header-content {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  right: 40px;
+  max-width: 700px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.header-text {
+  font-size: 2.5rem;
+  color: #d3d3d3;
+  font-family: "Ubuntu";
+}
+
+.header-img {
+  width: 22rem;
+  height: 10rem;
+}
+
+/* header for mobile */
+@media (max-width: 940px), (max-device-width: 460px) {
+  .header-content {
+    margin: auto;
+  }
+
+  .header-img {
+    display: block;
+    margin: auto;
+  }
+
+  .header-text {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
+
+/* Core-themes-section */
+.core-themes {
+  background-color: #2e2e2e;
+}
+
+.themes-row {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.theme {
+  text-align: center;
+  width: 200px;
+}
+
+.theme-titles {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.themes-text {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-top: 10px;
+  font-family: "Montserrat";
+  line-height: 25px;
+  color: #d3d3d3;
+}
+
+.themes-icon {
+  padding-bottom: 15px;
+  color: #ffcd60;
+}
+
+/* core themes for mobile */
+@media (max-width: 940px), (max-device-width: 460px) {
+  .themes-row {
+    display: block;
+  }
+
+  .theme {
+    margin: auto auto;
+    text-align: center;
+    width: 400px;
+    padding-top: 20px;
+  }
+
+  .theme-titles {
+    font-size: 5rem;
+  }
+
+.themes-text {
+  font-size: 2rem;
+  width:
+}
+
+}
+
+/* Tips-section */
+.tips {
+  background-color: #ffcd60;
+  text-align: center;
+}
+
+.tips-text {
+  line-height: 1.5;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.tips-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* tips for mobile */
+@media  (max-width: 940px), (max-device-width: 460px) {
+  .tips-text {
+    font-size: 3.5rem;
+  }
+
+  .tips-image {
+    width: 150px;
+    height: 150px;
+  }
+  em {
+    font-size: 2rem;
+  }
+}
+
+
+/* Socials */
+.socials {
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+}
+
+/* socials mobile */
