@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 /* title */
 .title {
   background-image: url(images/header-background.png);
@@ -65,34 +66,30 @@ h1, h2, h3, h4, h5, h6 {
 
   .header-text {
     text-align: center;
-    font-size: 3.5rem;
   }
 }
 
 /* Core-themes-section */
-.core-themes {
+
+.card-deck {
+  background-image: linear-gradient(black, black, #ffcd60);
+  padding-bottom: 15px;
+  border: none;
+}
+
+.card {
   background-color: #2e2e2e;
+  border: none;
 }
 
-.themes-row {
-display: flex;
-justify-content: space-around;
-align-items: center;
-}
-
-.theme {
-  text-align: center;
-  width: 200px;
-}
-
-.theme-titles {
+.card-title {
   font-size: 2rem;
   font-weight: lighter;
   color: #fff;
+  text-align: center;p
 }
 
-.themes-text {
-  font-size: 1.1rem;
+.card-text {
   font-weight: lighter;
   padding-top: 10px;
   font-family: "Montserrat";
@@ -101,33 +98,11 @@ align-items: center;
 }
 
 .themes-icon {
-  padding-bottom: 15px;
+  padding-top: 15px;
   color: #ffcd60;
+  margin: auto;
 }
 
-/* core themes for mobile */
-@media (max-width: 940px), (max-device-width: 460px) {
-  .themes-row {
-    display: block;
-  }
-
-  .theme {
-    margin: auto auto;
-    text-align: center;
-    width: 400px;
-    padding-top: 20px;
-  }
-
-  .theme-titles {
-    font-size: 5rem;
-  }
-
-.themes-text {
-  font-size: 2rem;
-  width:
-}
-
-}
 
 /* Tips-section */
 .tips {
@@ -162,6 +137,87 @@ align-items: center;
   }
 }
 
+/* Video Section */
+
+.video-section {
+  background-color: #ffcd60;
+  text-align: center;
+}
+
+.video-text {
+  color: #2e2e2e;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+.video-text:hover {
+  color: #fff;
+}
+
+.team-video {
+  padding-top: 0;
+  padding-bottom: 3%;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* FAQ */
+/* Style the buttons that are used to open and close the accordion panel */
+
+.faq {
+  background-color: #2e2e2e;
+  padding-bottom: 0;
+}
+
+.faq-title {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+padding-bottom: 20px;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.questions {
+  padding-top: 15px;
+}
 
 /* Socials */
 .socials {

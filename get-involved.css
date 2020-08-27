@@ -1,0 +1,125 @@
+/* video */
+video {
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+    font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* overriding bootsrap for navbar */
+nav {
+  z-index: 50;
+  position: absolute;
+}
+
+body {
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+
+/* title carousel */
+.carousel {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.background-image{
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.bck-video {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* CPP paragraph */
+.jumbotron {
+  background-color: #555555;
+}
+
+.btn-primary {
+  background-color: #ffcf60;
+  border-color: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.cpp-text {
+  font-size: 1.2rem;
+}
+
+.my-4 {
+  border-top: 1px solid #b9b9b9;
+}
+
+/* past partners */
+
+.center-items {
+  align-items: center;
+  text-align: center;
+}
+
+.no-vert-pad {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/* socials */
+
+.socials {
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+}

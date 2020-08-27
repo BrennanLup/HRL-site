@@ -9,7 +9,7 @@ h2 {
   line-height: 1.33;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 2rem;
 }
 
 h2::after {
@@ -22,6 +22,24 @@ h2::after {
   background-color: #ffcd60;
   position: relative;
 }
+
+a {
+  color: #fff;
+}
+
+
+a:hover {
+  color: #b9b9b9;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
 
 /* title section*/
 .title-section {
@@ -76,20 +94,30 @@ h2::after {
 }
 
 .HRL-laurier-section, textarea {
-  max-width: 50rem;
+  max-width: 60rem;
   margin: auto;
-  padding: 4.2rem;
+  padding: 3rem;
+  padding-bottom: 0;
 }
 
 .HRL-laurier-title {
-  font-size: 52px;
+  font-size: 2.8rem;
+}
+
+.hrpa-links {
+  color: inherit;
+}
+
+/* CV and resume */
+.card-deck {
+  padding-top: 2%;
+}
+
+.card-title {
+  color: inherit;
 }
 
 /* Socials */
-.container-fluid {
-  padding: 7% 15%;
-}
-
 .socials {
   text-align: center;
   background-color: #2e2e2e;
