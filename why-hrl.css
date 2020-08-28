@@ -269,4 +269,6 @@ h2::after {
 .copyright {
   padding-top: 10px;
   color: #fff;
+  font-size: inherit;
+  color: inherit;
 }

@@ -143,4 +143,5 @@ p {
 .copyright {
   padding-top: 10px;
   color: #fff;
+  font-size: inherit;
 }

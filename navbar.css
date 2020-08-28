@@ -2,15 +2,14 @@ nav {
   background-color: #2e2e2e;
 }
 
-.title {
-  position: relative;
+.nav-pad {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.title-img {
-  width: 30%;
-  height: 30%;
+.navbar-brand {
+  font-size: 1.4rem;
 }
-
 
 
 /* Socials */
