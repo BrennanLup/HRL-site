@@ -200,29 +200,6 @@ padding-bottom: 20px;
 
 /* mobile */
 @media only screen and (max-device-width: 768px) {
-  .navbar-toggler-icon {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  .navbar-brand {
-    font-size: 2rem;
-  }
-
-  .nav-pad {
-    padding: 15px 30px;
-  }
-
-  .nav-logo {
-    height: 45px;
-    width: 45px;
-  }
-
-  .nav-item {
-    font-size: 1.5rem;
-  }
-
-
   .header {
     min-height: 950px;
   }
@@ -283,7 +260,7 @@ padding-bottom: 20px;
 /* Socials */
 .socials {
   text-align: center;
-  background-color: #2e2e2e;
+  background-kcolor: #2e2e2e;
 }
 
 .contact-us {

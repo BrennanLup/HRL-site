@@ -1,3 +1,9 @@
+*{ /* removes any existing structure */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 /* video */
 video {
   min-width: 100%;
@@ -95,11 +101,57 @@ body {
   padding-top: 0;
 }
 
-/* socials */
+@media only screen and (max-device-width: 768px) {
+  .background-video {
+    display: none;
+  }
 
+
+  .carousel {
+    margin-top: 10%;
+    margin-bottom: auto;
+  }
+
+  .carousel-inner {
+    height: 950px;
+    background-image: url(images/bckg.jpg);
+  }
+
+  .carousel-item {
+    height: inherit;
+  }
+
+  .carousel-caption {
+    top: 100px;
+    bottom: inherit;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2.3rem;
+  }
+
+  .cpp-text {
+    font-size: 2rem;
+  }
+
+  .btn-lg {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+  }
+}
 .socials {
   text-align: center;
-  background-color: #2e2e2e;
+  background-kcolor: #2e2e2e;
 }
 
 .contact-us {
@@ -109,7 +161,7 @@ body {
   color: #fff;
 }
 
-.social-icon {
+.social-icon-footer {
   margin: 10px 20px;
   padding-bottom: 10px;
   color: #fff;
@@ -122,5 +174,19 @@ body {
 .copyright {
   padding-top: 10px;
   color: #fff;
-  font-size: inherit;
+}
+
+.social-icon-footer {
+  font-size: 3rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .social-icon-footer {
+    font-size: 5rem;
+  }
+
 }

@@ -117,10 +117,35 @@ p {
   color: inherit;
 }
 
-/* Socials */
+@media only screen and (max-device-width: 768px) {
+  .HRL-laurier-section {
+    padding-top: 20%;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .card-deck {
+    display: inherit;
+  }
+
+  .card-deck .card {
+    margin-bottom: 50px;
+  }
+
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  .HRL-laurier-title {
+    font-size: 4rem;
+  }
+}
 .socials {
   text-align: center;
-  background-color: #2e2e2e;
+  background-kcolor: #2e2e2e;
 }
 
 .contact-us {
@@ -130,7 +155,7 @@ p {
   color: #fff;
 }
 
-.social-icon {
+.social-icon-footer {
   margin: 10px 20px;
   padding-bottom: 10px;
   color: #fff;
@@ -143,5 +168,19 @@ p {
 .copyright {
   padding-top: 10px;
   color: #fff;
-  font-size: inherit;
+}
+
+.social-icon-footer {
+  font-size: 3rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .social-icon-footer {
+    font-size: 5rem;
+  }
+
 }

@@ -4,9 +4,12 @@
   box-sizing: border-box;
 }
 
-
+body{
+  text-align: center;
+}
 div {
   display: block;
+  text-align: center;
 }
 
 h2 {
@@ -22,6 +25,10 @@ p {
   margin-top: 0;
   padding-top: 10px;
   font-size: 22px;
+}
+
+.container-fluid {
+  padding: 7% 15%;
 }
 
 
@@ -185,6 +192,8 @@ h2::after {
 
 
 @media (min-width: 500px) {
+
+
   .content-list .row-content {
     display: flex;
     flex-shrink: 0;
@@ -212,6 +221,7 @@ h2::after {
 }
 }
 
+
 @media (min-width: 1080px) {
 
 .team-member.row-column {
@@ -235,18 +245,63 @@ h2::after {
 }
 
 
+@media only screen and (max-device-width: 768px) {
+  .title-bgimg {
+    height: 1000px;
+  }
 
+  .why-hrl-text {
+    font-size: 2rem;
+    line-height: 55px;
+    text-align: center;
+  }
 
+  .title-text {
+    font-size: 3rem;
+    padding: 20px 0;
+  }
 
-/* Socials */
+  .intro-title {
+    text-align: center;
+  }
+  h2::after {
+      margin: auto;
+  }
 
-.container-fluid {
-  padding: 7% 15%;
+  .team-member.row-column {
+    width: 100%;
+  }
+
+  .team-info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .team-title {
+    font-size: 2.5rem;
+    padding: 10px 0;
+  }
+
+  .program {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+  }
+
+  .member-info {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
 }
 
-.socials {
+
+
+
+/.socials {
   text-align: center;
-  background-color: #2e2e2e;
+  background-kcolor: #2e2e2e;
 }
 
 .contact-us {
@@ -256,7 +311,7 @@ h2::after {
   color: #fff;
 }
 
-.social-icon {
+.social-icon-footer {
   margin: 10px 20px;
   padding-bottom: 10px;
   color: #fff;
@@ -269,6 +324,19 @@ h2::after {
 .copyright {
   padding-top: 10px;
   color: #fff;
-  font-size: inherit;
-  color: inherit;
+}
+
+.social-icon-footer {
+  font-size: 3rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .social-icon-footer {
+    font-size: 5rem;
+  }
+
 }
