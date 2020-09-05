@@ -1,4 +1,4 @@
-*{ /* removes any existing structure */
+kkk*{ /* removes any existing structure */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -88,6 +88,7 @@ p {
 }
 
 /* HRPA Links */
+
 .HRL-laurier-section {
   display: block;
   width: 100%;
@@ -98,6 +99,10 @@ p {
   margin: auto;
   padding: 3rem;
   padding-bottom: 0;
+}
+
+.top {
+  padding-top: 100px;
 }
 
 .HRL-laurier-title {
@@ -143,6 +148,13 @@ p {
     font-size: 4rem;
   }
 }
+
+.here {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* socials */
 .socials {
   text-align: center;
   background-kcolor: #2e2e2e;

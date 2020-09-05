@@ -26,7 +26,7 @@
 
 /* events specifics */
 .container {
-    margin-top: 7%;
+    margin-top: 100px;
 }
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -47,13 +47,11 @@
 }
 }
 
-@media (min-width: 62em) {
+@media only screen and (max-device-width: 768px) {
 .featurette-heading {
     margin-top: auto;
 }
-}
 
-k
   .container {
     margin-top: 20%;
     max-width: 768px;
@@ -73,6 +71,7 @@ k
     order: 1;
   }
 }
+
 .socials {
   text-align: center;
   background-kcolor: #2e2e2e;

@@ -9,7 +9,6 @@ body{
 }
 div {
   display: block;
-  text-align: center;
 }
 
 h2 {
@@ -154,7 +153,6 @@ h2::after {
 }
 
 .team-title {
-  margin: auto 0 0;
   line-height: 1.777rem;
 }
 
@@ -190,6 +188,10 @@ h2::after {
   width: 100%;
 }
 
+/* links ot other pages */
+.pages {
+  padding: 3%;
+}
 
 @media (min-width: 500px) {
 

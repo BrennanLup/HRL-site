@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+
+*:focus {
+  outline: none;
+}
+
 body {
   background-color: black;
 }
@@ -141,6 +146,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+/* links ot other pages */
+.pages {
+  padding: 3%;
+}
+
+
+
 /* FAQ */
 /* Style the buttons that are used to open and close the accordion panel */
 
@@ -255,6 +267,10 @@ padding-bottom: 20px;
     font-size: 1.7rem;
   }
 
+  .col {
+    flex-basis: inherit;
+    padding: 4% 8%;k
+  }
 }
 
 /* Socials */
