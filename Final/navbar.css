@@ -1,3 +1,80 @@
+/* navbar */
 nav {
   background-color: #2e2e2e;
+    font-family: "bahnschrift";
+}
+
+.nav-pad {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+
+/* Socials */
+.socials {
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* mobile responsiveness */
+
+@media only screen and (max-device-width: 768px) {
+  .navbar-toggler-icon {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .navbar-brand {
+    font-size: 3rem;
+  }
+
+  .nav-pad {
+    padding: 25px 45px;
+  }
+
+  .nav-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav-item {
+    font-size: 2.5rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .social-icon-footer {
+    font-size: 5rem;
+  }
+
 }

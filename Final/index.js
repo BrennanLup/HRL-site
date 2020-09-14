@@ -1,26 +1,17 @@
-// Nav Bar
-const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li")
+//Why-HRL
+// FAQ code
 
-  burger.addEventListener('click', () => {
-    // toggle Nav
-    nav.classList.toggle('nav-active');
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-    //Animate Links
-
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = ''
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`;
-      }
-    });
-    //burger animation
-    burger.classList.toggle('toggle');
-
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else { // calculates max-hieght for panel depending on screen size
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
   });
-
 }
-navSlide();

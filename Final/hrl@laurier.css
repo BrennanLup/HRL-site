@@ -1,0 +1,202 @@
+*{ /* removes any existing structure */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "bahnschrift";
+}
+
+h2 {
+  margin-top: 0;
+  line-height: 1.33;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 3.5rem;
+  top: 1rem;
+  border-radius: 1px;
+  background-color: #ffcd60;
+  position: relative;
+}
+
+a {
+  color: #fff;
+}
+
+
+a:hover {
+  color: #b9b9b9;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+/* title section*/
+.title-section {
+  height: 500px;
+  background-image: url(images/bckg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.title-content {
+  position: absolute;
+  height: 500px;
+  padding-left: 75px;
+}
+
+.title-text {
+    font-family: "Ubuntu";
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+    width: 300px;
+    height: auto;
+    padding-top: 50%;
+}
+
+@media (max-width:768px) {
+  .title-text {
+    font-size: 3.5rem;
+    line-height: 80px;
+      padding-top: 55%;
+  }
+  .title-content {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  .title-text {
+    font-size: 3rem;
+  }
+  .title-content {
+    padding-left: 0;
+  }
+}
+
+/* HRPA Links */
+
+.HRL-laurier-section {
+  display: block;
+  width: 100%;
+}
+
+.HRL-laurier-section, textarea {
+  max-width: 60rem;
+  margin: auto;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+.top {
+  padding-top: 100px;
+}
+
+.HRL-laurier-title {
+  font-size: 2.8rem;
+}
+
+.hrpa-links {
+  color: inherit;
+}
+
+/* CV and resume */
+.card-deck {
+  padding-top: 2%;
+}
+
+.card-title {
+  color: inherit;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .HRL-laurier-section {
+    padding-top: 20%;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .card-deck {
+    display: inherit;
+  }
+
+  .card-deck .card {
+    margin-bottom: 50px;
+  }
+
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  .HRL-laurier-title {
+    font-size: 4rem;
+  }
+}
+
+.here {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* socials */
+.socials {
+  text-align: center;
+  background-kcolor: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon-footer {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+}
+
+.social-icon-footer {
+  font-size: 3rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .social-icon-footer {
+    font-size: 5rem;
+  }
+
+}

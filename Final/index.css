@@ -1,0 +1,285 @@
+*{ /* removes any existing structure */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* removes border around video */
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: black;
+  font-family: "Montserrat";
+  font-family: "bahnschrift";
+}
+
+/* universal */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+
+/* title */
+.title {
+  background-image: url(images/header-background.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* <!-- Header section */
+.header {
+  position: relative;
+  padding-bottom: 30%;
+  min-height: 500px;
+}
+
+.header-content {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  right: 40px;
+  max-width: 700px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.header-text {
+  font-size: 2.5rem;
+  color: #d3d3d3;
+  font-family: "Ubuntu";
+}
+
+.header-img {
+  width: 22rem;
+  height: 10rem;
+}
+
+
+/* Core-themes-section */
+
+.card-deck {
+  background-image: linear-gradient(black, black, #ffcd60);
+  padding-bottom: 15px;
+  border: none;
+  margin: 0;
+}
+
+.card {
+  background-color: #2e2e2e;
+  border: none;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+  text-align: center;p
+}
+
+.card-text {
+  font-weight: lighter;
+  padding-top: 10px;
+  font-family: "Montserrat";
+  line-height: 25px;
+  color: #d3d3d3;
+}
+
+.themes-icon {
+  padding-top: 15px;
+  color: #ffcd60;
+  margin: auto;
+  font-size: 4rem;
+}
+
+/* Video Section */
+
+.video-section {
+  background-color: #ffcd60;
+  text-align: center;
+}
+
+.video-text {
+  color: #2e2e2e;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+.video-text:hover {
+  color: #fff;
+}
+
+.team-video {
+  padding-top: 0;
+  padding-bottom: 3%;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* FAQ */
+/* Style the buttons that are used to open and close the accordion panel */
+
+.faq {
+  background-color: #2e2e2e;
+  padding-bottom: 0;
+}
+
+.faq-title {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.questions {
+  padding-top: 15px;
+}
+
+/* mobile responsiveess*/
+@media only screen and (max-device-width: 768px) {
+  .header {
+    min-height: 950px;
+  }
+
+  .header-content {
+    margin: auto;
+  }
+
+  .header-img {
+    display: block;
+    margin: auto;
+    height: 20rem;
+    width: 40rem;
+  }
+
+  .header-text {
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .card-deck .card {
+    flex: inherit;
+    margin-right: 0;
+    margin-bottom: 10%;
+    margin-left: 0;
+    padding: 7% 0;
+  }
+
+  .card-text {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 3.5rem;
+  }
+
+  .themes-icon {
+    padding-top: 30px;
+    font-size: 7rem;
+  }
+
+  .faq {
+    padding: 7% 2%;
+  }
+
+  button {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  .col {
+    flex-basis: inherit;
+    padding: 4% 8%;k
+  }
+}
+
+/* Socials */
+.socials {
+  text-align: center;
+  background-kcolor: #2e2e2e;
+}
+
+.contact-us {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-icon-footer {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ffcd60;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: #fff;
+}
+
+.social-icon-footer {
+  font-size: 3rem;
+}
+
+/* socials mobile */
+
+@media only screen and (max-device-width: 768px) {
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .social-icon-footer {
+    font-size: 5rem;
+  }
+}
